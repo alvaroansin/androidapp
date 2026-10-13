@@ -22,5 +22,5 @@ dependencyResolutionManagement {
     }
 }
 
-rootProject.name = "lpm"
+rootProject.name = "YT Player"
 include(":app")

@@ -3,6 +3,7 @@ package com.example.ytplayer
 import android.os.Bundle
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
+import androidx.core.content.ContextCompat
 import androidx.media3.common.MediaItem
 import androidx.media3.common.MediaMetadata
 import androidx.media3.session.MediaController
@@ -35,7 +36,7 @@ class PlayerActivity : AppCompatActivity() {
             } catch (e: Exception) {
                 Toast.makeText(this, getString(R.string.player_error, e.message), Toast.LENGTH_LONG).show()
             }
-        }, androidx.media3.common.util.UnstableApi::class.java.let { Runnable { it } }.let { mainExecutor }) { }
+        }, ContextCompat.getMainExecutor(this))
     }
 
     private fun loadAndPlay(videoId: String, title: String) {
