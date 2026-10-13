@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">YT Player</string>
+    <string name="search_hint">Buscar vídeos…</string>
+    <string name="search">Buscar</string>
+    <string name="searching">Buscando…</string>
+    <string name="search_error">Error al buscar: %1$s</string>
+    <string name="player_error">Error del reproductor: %1$s</string>
+    <string name="stream_error">Error al obtener el vídeo: %1$s</string>
+    <string name="thumbnail_desc">Miniatura del vídeo</string>
+</resources>
